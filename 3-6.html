@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>HTML and CSS for Complete Beginners: Example 3-6</title>
+
+		<!-- This CSS and font is purely for presentational purposes. -->
+		<link rel="stylesheet" href="css/presentation.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet" />
+
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+
+			.card {
+				color: rgb(20, 41, 58);
+				/*font-family: 'Poppins',sans-serif; /*in case Poppins can't load then use sans-serif
+				font-size: 18px;
+				line-height: 1.55; /*ระยะห่างระหว่างบรรทัด 1.55 * 18px = 27.9px 
+				*/
+				font: 18px/1.55 'Poppins',sans-serif;
+				/* text-align: start ; */
+				/*About alignment
+					recommented to use : start ,center ,end
+				*/
+			}
+
+			.card p {
+				color:rgba(20, 41, 58, 0.8);
+			}
+
+			/*styling hyperlink*/
+			.card a {
+				color: #FF5D00;
+				text-decoration: none; /*to remove line of hyperlink*/
+			}
+
+			.card h1{
+				font-size: 1.75em;
+				font-weight: 900;
+				/*font-style: italic;*/
+			}
+
+			/*.card p span*/
+			p span{
+				font-size: 0.75em; /*.75*/
+				font-weight: 720;
+				line-height: 1.8;
+				text-transform: uppercase;
+				letter-spacing: 1px; /*ระยะห่างระหว่างตัวอักษร*/
+			}
+
+			/*it can applied to Button too*/
+			/*to change color when mouse over the link*/
+			.card a:hover{
+				color:black;
+			}
+			/*to change color when click on it*/
+			.card a:active{
+				color:darkgrey;
+			}
+			
+
+		</style>
+	</head>
+	<body>
+		<section class="learn">
+			<!-- Practice area start -->
+
+			<div class="card">
+				<img src="images/example/envelopes-bulk.svg" alt="envelopes-bulk">
+
+				<h1>Let's get in touch</h1>
+
+				<p>
+					9 Augusta Street<br>
+					Fair Lawn, NJ 07410
+				</p>
+
+				<hr>
+
+				<p>
+					<span>email</span><br>
+					<a href="#">chuck@roundhouse.com</a><br>
+				</p>
+
+				<p>
+					<span>phone</span><br>
+					<a href="#">+1-202-555-0125</a>
+				</p>
+			</div>
+
+			<!-- Practice area end -->
+		</section>
+
+		<section class="preview" data-content="lesson 3-6: Styling Text with CSS">
+			<img width="444px" src="images/reference/address.png" alt="Reference image" />
+		</section>
+	</body>
+</html>

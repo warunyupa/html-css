@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>HTML and CSS for Complete Beginners: Example 3-3-2</title>
+
+		<!-- This CSS and font is purely for presentational purposes. -->
+		<link rel="stylesheet" href="css/presentation.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet" />
+
+		<style>
+			/* '*' universal selector : select ALL element 
+				EX: div *{
+
+				}
+			*/
+			* {
+				box-sizing: border-box;
+			}
+
+			/* descendant combinator selector */
+			form button{
+				background-color: bisque;
+			}
+			form div input{
+				background-color: blueviolet;
+			}
+
+			/* multiple selector- creating a selector list*/
+			input[type="email"],
+			input[type="text"],
+			input[type="password"] {
+				background-color: white;
+				border : 1px solid #ccc;
+			}
+			
+			/* attribute selector */
+			input[disabled]{
+				background-color: #ff5411;
+			}
+			input[value="chuck@roundhouse.com"]{
+				border-color: #118900;
+			}
+		</style>
+		
+	</head>
+	<body>
+		<section class="learn">
+			<!-- Practice area start -->
+
+			<h1>Register a New Account</h1>
+
+			<form action="" method="post">
+				<div>
+					<label for="register-email">Email address</label>
+					<input type="email" name="register-email" id="register-email" value="chuck@roundhouse.com" disabled>
+				</div>
+
+				<div>
+					<label for="register-name">Name</label>
+					<input type="text" name="register-name" id="register-name" placeholder="Your full name">
+				</div>
+
+				<div>
+					<label for="register-password">Password</label>
+					<input type="password" name="register-password" id="register-password" disabled>
+				</div>
+
+				<div>
+					<label for="register-c-password">Confirm Password</label>
+					<input type="password" name="register-c-password" id="register-c-password">
+				</div>
+
+				<button>Register Account</button>
+			</form>
+
+			<button>Hello!!</button>
+			<!-- Practice area end -->
+		</section>
+
+		<section class="preview" data-content="lesson 3-3: Using CSS Selectors">
+			<img width="704px" src="images/reference/register-form.png" alt="Reference image" />
+		</section>
+	</body>
+</html>
